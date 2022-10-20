@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <!-- <link rel="stylesheet" href="./css/jquery-ui.min.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/mane.js"></script>
+</head>
+<body>
+    <section class="hello">
+        <div class="order">
+            <h3 class="order__header">Оформление заказа</h3>
+            <button class="order__close"></button>
+            <div class="order__info">
+                <p class="order__count">
+                    Товаров в заказе:&nbsp; 
+                    <span class="order__count-num"></span>
+                </p>
+                <p class="order__price">
+                    На сумму:&nbsp;
+                    <span class="order__price-num"></span>
+                </p>
+                <button class="order__products">
+                    Состав заказа 
+                    <span class="order__products-btn">
+                        <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.65689 5.60645L1.35359 0.303147L0.646484 1.01025L6.65689 7.02066L12.6673 1.01025L11.9602 0.303147L6.65689 5.60645Z" fill="#A1A6B4"/>
+                        </svg>
+                    </span>
+                </button>
+                <ul class="order__list">
+                </ul>
+            </div>
+            <form class="order__form">
+                <label class="order__label" for="name">
+                    <span class="error-label">Некорректное имя</span>
+                    <span>Введите имя</span>
+                    <input type="text" name="name" id="name">
+                </label>
+                <label class="order__label" for="tel">
+                    <span class="error-label">Некорректный телефон</span>
+                    <span>Введите телефон</span>
+                    <input type="tel" name="tel" id="tel" placeholder="+7 (999) 999-99-99">
+                </label>
+                <label class="order__label" for="mail">
+                    <span class="error-label">Некорректный Email</span>
+                    <span>Введите Email</span>
+                    <input type="email" name="mail" id="mail">
+                </label>
+                <button class="order__btn" type="submit">Отправить заказ</button>
+            </form>  
+        </div>
+        <div class="header">
+            <div class="cart">
+                <span class="cart-icon">
+                    <img class="cart__icon" src="./img/IC_CART.svg" alt="">
+                    <span class="cart__count">0</span>
+                </span>
+                <div class="cart__content">
+                    <ul class="cart__list">
+                    </ul>
+                    <span>Итого:</span>
+                    <span class="cart__pricesum"></span>
+                    <button class="cart__btn">Оформить заказ</button>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#about-us">О НАС</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#coffee">КОФЕ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#giftsets">ПОДАРОЧНЫЕ НАБОРЫ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#combo">КОМБО-НАБОРЫ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">КОНТАКТЫ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+           <div class="hello-wrapper">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="./img/revo_logo.svg" alt="">
+                </a>
+                <h1 class="hello-header">
+                    ВАШ
+                    <span class="hello-header-span">ЛЮБИМЫЙ</span>
+                    КОФЕ
+                </h1>
+           </div> 
+           <img class="hello-img" src="./img/design-your-coffee-bag.jpg" alt="">
+        </div>
+    </section>
+    <section class="about-us" id="about-us">
+        <div class="container">
+            <p class="section-text">Ваш любимый кофе</p>
+            <h2 class="section-header about-us-header">КОФЕ ДЛЯ ОТЛИЧНОГО НАЧАЛА ДНЯ</h2>
+            <ul class="about-us-list">
+                <li class="advantage">
+                    <img class="advantage__img" src="./img/ic.svg" alt="">
+                    <h3 class="advantage__header">Качество</h3>
+                    <p class="advantage__text">Приготовлен на основе лучших сортов арабики с горных склонов Южной и Центральной Америки.</p>
+                </li>
+                <li class="advantage">
+                    <img class="advantage__img" src="./img/IC (1).svg" alt="">
+                    <h3 class="advantage__header">Происхождение</h3>
+                    <p class="advantage__text">Начните день с хорошего настроения и подарит наслаждение от великолепного аромата. </p>
+                </li>
+                <li class="advantage">
+                    <img class="advantage__img" src="./img/IC (2).svg" alt="">
+                    <h3 class="advantage__header">Зерна</h3>
+                    <p class="advantage__text">Гармоничное сочетание позволяет получать сбалансированный сладковатый вкус с легкой кислинкой во вкусе. </p>
+                </li>
+                <li class="advantage">
+                    <img class="advantage__img" src="./img/IC (3).svg" alt="">
+                    <h3 class="advantage__header">Смеси</h3>
+                    <p class="advantage__text">Насыщенный запоминающийся аромат достигается путем средней обжаркой зерен. </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="coffee" id="coffee">
+        <div class="coffe-background"></div>
+        <p class="section-text">Выбери своего фаворита</p>
+        <h2 class="section-header coffee-header">Кофе в зернах</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide coffee-card product">
+                    <img class="product-img" src="./img/IMAGE.jpg" alt="">
+                    <div class="coffee-card__wrapper">
+                        <span class="coffee-card__price product-price">1 500 p.</span>
+                        <h3 class="coffee-card__header product-name">
+                            REVO Morning
+                        </h3>
+                        <p class="coffe-card__text">Насыщенный, яркий вкус</p>
+                        <button class="coffee-card__btn count-btn-add" type="button">
+                            В КОРЗИНУ
+                        </button>
+                        <a class="coffee-card__link" data-prod="REVO Morning">
+                            О ТОВАРЕ
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide coffee-card product">
+                    <img class="product-img" src="./img/IMAGE (1).jpg" alt="">
+                    <div class="coffee-card__wrapper">
+                        <span class="coffee-card__price product-price">1 500 p.</span>
+                        <h3 class="coffee-card__header product-name">
+                            REVO Everyday
+                        </h3>
+                        <p class="coffe-card__text">Насыщенный, яркий вкус</p>
+                        <button class="coffee-card__btn count-btn-add">
+                            В КОРЗИНУ
+                        </button>
+                        <a class="coffee-card__link" data-prod="REVO Everyday">
+                            О ТОВАРЕ
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide coffee-card product">
+                    <img class="product-img" src="./img/IMAGE (2).jpg" alt="">
+                    <div class="coffee-card__wrapper">
+                        <span class="coffee-card__price product-price">1 500 p.</span>
+                        <h3 class="coffee-card__header product-name">
+                            REVO Origin
+                        </h3>
+                        <p class="coffe-card__text">Насыщенный, яркий вкус</p>
+                        <button class="coffee-card__btn count-btn-add">
+                            В КОРЗИНУ
+                        </button>
+                        <a class="coffee-card__link" data-prod="REVO Origin">
+                            О ТОВАРЕ
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide coffee-card product">
+                    <img class="product-img" src="./img/IMAGE (3).jpg" alt="">
+                    <div class="coffee-card__wrapper">
+                        <span class="coffee-card__price product-price">1 500 p.</span>
+                        <h3 class="coffee-card__header product-name">
+                            REVO Honey
+                        </h3>
+                        <p class="coffe-card__text">Насыщенный, яркий вкус</p>
+                        <button class="coffee-card__btn count-btn-add">
+                            В КОРЗИНУ
+                        </button>
+                        <a class="coffee-card__link" data-prod="REVO Honey">
+                            О ТОВАРЕ
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide coffee-card product">
+                    <img class="product-img" src="./img/IMAGE (4).jpg" alt="">
+                    <div class="coffee-card__wrapper">
+                        <span class="coffee-card__price product-price">1 500 p.</span>
+                        <h3 class="coffee-card__header product-name">
+                            REVO Natural
+                        </h3>
+                        <p class="coffe-card__text">Насыщенный, яркий вкус</p>
+                        <button class="coffee-card__btn count-btn-add">
+                            В КОРЗИНУ
+                        </button>
+                        <a class="coffee-card__link" data-prod="REVO Natural">
+                            О ТОВАРЕ
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-slide coffee-card product">
+                    <img class="product-img" src="./img/IMAGE (5).jpg" alt="">
+                    <div class="coffee-card__wrapper">
+                        <span class="coffee-card__price product-price">1 500 p.</span>
+                        <h3 class="coffee-card__header product-name">
+                            REVO Natural
+                        </h3>
+                        <p class="coffe-card__text">Насыщенный, яркий вкус</p>
+                        <button class="coffee-card__btn count-btn-add">
+                            В КОРЗИНУ
+                        </button>
+                        <a class="coffee-card__link" data-prod="REVO Natural">
+                            О ТОВАРЕ
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="about-product" data-aboutprod="REVO Morning">
+            <h3 class="about-product__heder">REVO Morning</h3>
+            <button class="about-product__close"></button>
+            <p class="about-product__text">Приготовлен на основе лучших сортов арабики с горных склонов Южной и Центральной Америки.</p>
+            <p class="about-product__country">Страна присхождения: <span class="about-product__country-span">Колумбия</span></p>
+            <p class="about-product__intensity">Насыщенность:&nbsp;
+                <span class="about-product__intensity-span">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4384 0C10.4418 0 7.01171 1.56033 4.24271 4.48841C0.266279 8.69507 -1.04233 14.3497 0.859877 18L17 0.932633C15.9528 0.322766 14.7437 0 13.4384 0ZM3 20.0891C6.44787 22.1042 11.7906 20.7168 15.7623 16.5136C19.734 12.3069 21.0411 6.65214 19.1411 3L3 20.0891Z" fill="#151D28"/>
+                    </svg>
+                </span> 
+                <span  class="about-product__intensity-span">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.60389 4.6046C0.116149 9.11066 -0.694174 15.6275 2.79744 19.1333C4.25808 20.6012 6.24389 21.3112 8.3897 21.3112C11.3703 21.3112 14.6568 19.9392 17.2658 17.3208C21.7536 12.8148 22.5639 6.29794 19.0723 2.79208C15.582 -0.71638 9.09163 0.0985458 4.60389 4.6046ZM6.42841 6.43657C8.54712 4.31051 11.1729 3.17687 13.4645 3.17687C14.4632 3.17687 15.3884 3.41137 16.1897 3.85446L3.84002 16.2545C2.38454 13.6012 3.38583 9.49286 6.42841 6.43657ZM5.66583 18.0852C8.30712 19.5492 12.4 18.5413 15.4426 15.4876C18.4852 12.4313 19.4865 8.32295 18.031 5.66958L5.66583 18.0852Z" fill="#151D28"/>
+                    </svg>
+                </span>
+                <span  class="about-product__intensity-span">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.60389 4.6046C0.116149 9.11066 -0.694174 15.6275 2.79744 19.1333C4.25808 20.6012 6.24389 21.3112 8.3897 21.3112C11.3703 21.3112 14.6568 19.9392 17.2658 17.3208C21.7536 12.8148 22.5639 6.29794 19.0723 2.79208C15.582 -0.71638 9.09163 0.0985458 4.60389 4.6046ZM6.42841 6.43657C8.54712 4.31051 11.1729 3.17687 13.4645 3.17687C14.4632 3.17687 15.3884 3.41137 16.1897 3.85446L3.84002 16.2545C2.38454 13.6012 3.38583 9.49286 6.42841 6.43657ZM5.66583 18.0852C8.30712 19.5492 12.4 18.5413 15.4426 15.4876C18.4852 12.4313 19.4865 8.32295 18.031 5.66958L5.66583 18.0852Z" fill="#151D28"/>
+                    </svg>
+                </span>
+            </p>
+        </div>
+        <div class="about-product" data-aboutprod="REVO Everyday">
+            <h3 class="about-product__heder">REVO Everyday</h3>
+            <button class="about-product__close"></button>
+            <p class="about-product__text">Приготовлен на основе лучших сортов арабики с горных склонов Южной и Центральной Америки.</p>
+            <p class="about-product__country">Страна присхождения: <span class="about-product__country-span">Колумбия</span></p>
+            <p class="about-product__intensity">Насыщенность:&nbsp;
+                <span class="about-product__intensity-span">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4384 0C10.4418 0 7.01171 1.56033 4.24271 4.48841C0.266279 8.69507 -1.04233 14.3497 0.859877 18L17 0.932633C15.9528 0.322766 14.7437 0 13.4384 0ZM3 20.0891C6.44787 22.1042 11.7906 20.7168 15.7623 16.5136C19.734 12.3069 21.0411 6.65214 19.1411 3L3 20.0891Z" fill="#151D28"/>
+                    </svg>
+                </span> 
+                <span  class="about-product__intensity-span">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.60389 4.6046C0.116149 9.11066 -0.694174 15.6275 2.79744 19.1333C4.25808 20.6012 6.24389 21.3112 8.3897 21.3112C11.3703 21.3112 14.6568 19.9392 17.2658 17.3208C21.7536 12.8148 22.5639 6.29794 19.0723 2.79208C15.582 -0.71638 9.09163 0.0985458 4.60389 4.6046ZM6.42841 6.43657C8.54712 4.31051 11.1729 3.17687 13.4645 3.17687C14.4632 3.17687 15.3884 3.41137 16.1897 3.85446L3.84002 16.2545C2.38454 13.6012 3.38583 9.49286 6.42841 6.43657ZM5.66583 18.0852C8.30712 19.5492 12.4 18.5413 15.4426 15.4876C18.4852 12.4313 19.4865 8.32295 18.031 5.66958L5.66583 18.0852Z" fill="#151D28"/>
+                    </svg>
+                </span>
+                <span  class="about-product__intensity-span">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.60389 4.6046C0.116149 9.11066 -0.694174 15.6275 2.79744 19.1333C4.25808 20.6012 6.24389 21.3112 8.3897 21.3112C11.3703 21.3112 14.6568 19.9392 17.2658 17.3208C21.7536 12.8148 22.5639 6.29794 19.0723 2.79208C15.582 -0.71638 9.09163 0.0985458 4.60389 4.6046ZM6.42841 6.43657C8.54712 4.31051 11.1729 3.17687 13.4645 3.17687C14.4632 3.17687 15.3884 3.41137 16.1897 3.85446L3.84002 16.2545C2.38454 13.6012 3.38583 9.49286 6.42841 6.43657ZM5.66583 18.0852C8.30712 19.5492 12.4 18.5413 15.4426 15.4876C18.4852 12.4313 19.4865 8.32295 18.031 5.66958L5.66583 18.0852Z" fill="#151D28"/>
+                    </svg>
+                </span>
+            </p>
+        </div>
+        <div class="about-product" data-aboutprod="REVO Origin">
+            <h3 class="about-product__heder">REVO Origin</h3>
+            <button class="about-product__close"></button>
+            <p class="about-product__text">Приготовлен на основе лучших сортов арабики с горных склонов Южной и Центральной Америки.</p>
+            <p class="about-product__country">Страна присхождения: <span class="about-product__country-span">Колумбия</span></p>
+            <p class="about-product__intensity">Насыщенность:&nbsp;
+                <span class="about-product__intensity-span">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4384 0C10.4418 0 7.01171 1.56033 4.24271 4.48841C0.266279 8.69507 -1.04233 14.3497 0.859877 18L17 0.932633C15.9528 0.322766 14.7437 0 13.4384 0ZM3 20.0891C6.44787 22.1042 11.7906 20.7168 15.7623 16.5136C19.734 12.3069 21.0411 6.65214 19.1411 3L3 20.0891Z" fill="#151D28"/>
+                    </svg>
+                </span> 
+                <span  class="about-product__intensity-span">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.60389 4.6046C0.116149 9.11066 -0.694174 15.6275 2.79744 19.1333C4.25808 20.6012 6.24389 21.3112 8.3897 21.3112C11.3703 21.3112 14.6568 19.9392 17.2658 17.3208C21.7536 12.8148 22.5639 6.29794 19.0723 2.79208C15.582 -0.71638 9.09163 0.0985458 4.60389 4.6046ZM6.42841 6.43657C8.54712 4.31051 11.1729 3.17687 13.4645 3.17687C14.4632 3.17687 15.3884 3.41137 16.1897 3.85446L3.84002 16.2545C2.38454 13.6012 3.38583 9.49286 6.42841 6.43657ZM5.66583 18.0852C8.30712 19.5492 12.4 18.5413 15.4426 15.4876C18.4852 12.4313 19.4865 8.32295 18.031 5.66958L5.66583 18.0852Z" fill="#151D28"/>
+                    </svg>
+                </span>
+                <span  class="about-product__intensity-span">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.60389 4.6046C0.116149 9.11066 -0.694174 15.6275 2.79744 19.1333C4.25808 20.6012 6.24389 21.3112 8.3897 21.3112C11.3703 21.3112 14.6568 19.9392 17.2658 17.3208C21.7536 12.8148 22.5639 6.29794 19.0723 2.79208C15.582 -0.71638 9.09163 0.0985458 4.60389 4.6046ZM6.42841 6.43657C8.54712 4.31051 11.1729 3.17687 13.4645 3.17687C14.4632 3.17687 15.3884 3.41137 16.1897 3.85446L3.84002 16.2545C2.38454 13.6012 3.38583 9.49286 6.42841 6.43657ZM5.66583 18.0852C8.30712 19.5492 12.4 18.5413 15.4426 15.4876C18.4852 12.4313 19.4865 8.32295 18.031 5.66958L5.66583 18.0852Z" fill="#151D28"/>
+                    </svg>
+                </span>
+            </p>
+        </div>
+        <div class="about-product" data-aboutprod="REVO Honey">
+            <h3 class="about-product__heder">REVO Honey</h3>
+            <button class="about-product__close"></button>
+            <p class="about-product__text">Приготовлен на основе лучших сортов арабики с горных склонов Южной и Центральной Америки.</p>
+            <p class="about-product__country">Страна присхождения: <span class="about-product__country-span">Колумбия</span></p>
+            <p class="about-product__intensity">Насыщенность:&nbsp;
+                <span class="about-product__intensity-span">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4384 0C10.4418 0 7.01171 1.56033 4.24271 4.48841C0.266279 8.69507 -1.04233 14.3497 0.859877 18L17 0.932633C15.9528 0.322766 14.7437 0 13.4384 0ZM3 20.0891C6.44787 22.1042 11.7906 20.7168 15.7623 16.5136C19.734 12.3069 21.0411 6.65214 19.1411 3L3 20.0891Z" fill="#151D28"/>
+                    </svg>
+                </span> 
+                <span  class="about-product__intensity-span">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.60389 4.6046C0.116149 9.11066 -0.694174 15.6275 2.79744 19.1333C4.25808 20.6012 6.24389 21.3112 8.3897 21.3112C11.3703 21.3112 14.6568 19.9392 17.2658 17.3208C21.7536 12.8148 22.5639 6.29794 19.0723 2.79208C15.582 -0.71638 9.09163 0.0985458 4.60389 4.6046ZM6.42841 6.43657C8.54712 4.31051 11.1729 3.17687 13.4645 3.17687C14.4632 3.17687 15.3884 3.41137 16.1897 3.85446L3.84002 16.2545C2.38454 13.6012 3.38583 9.49286 6.42841 6.43657ZM5.66583 18.0852C8.30712 19.5492 12.4 18.5413 15.4426 15.4876C18.4852 12.4313 19.4865 8.32295 18.031 5.66958L5.66583 18.0852Z" fill="#151D28"/>
+                    </svg>
+                </span>
+                <span  class="about-product__intensity-span">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.60389 4.6046C0.116149 9.11066 -0.694174 15.6275 2.79744 19.1333C4.25808 20.6012 6.24389 21.3112 8.3897 21.3112C11.3703 21.3112 14.6568 19.9392 17.2658 17.3208C21.7536 12.8148 22.5639 6.29794 19.0723 2.79208C15.582 -0.71638 9.09163 0.0985458 4.60389 4.6046ZM6.42841 6.43657C8.54712 4.31051 11.1729 3.17687 13.4645 3.17687C14.4632 3.17687 15.3884 3.41137 16.1897 3.85446L3.84002 16.2545C2.38454 13.6012 3.38583 9.49286 6.42841 6.43657ZM5.66583 18.0852C8.30712 19.5492 12.4 18.5413 15.4426 15.4876C18.4852 12.4313 19.4865 8.32295 18.031 5.66958L5.66583 18.0852Z" fill="#151D28"/>
+                    </svg>
+                </span>
+            </p>
+        </div>
+    </section>
+    <section class="giftsets" id="giftsets">
+        <div class="giftsets-background">
+        </div>
+        <div class="container">
+            <p class="section-text">Подарки для лучших друзей</p>
+            <h2 class="section-header giftsets-header">ПОДАРОЧНЫЕ НАБОРЫ</h2>
+            <div id="tabs" class="tabs">
+                <div class="giftsets-info giftsets-info--active product" data-target="one">
+                    <img class="giftsets-info__img product-img" src="./img/image.png" alt="">
+                    <span class="giftsets-info__price product-price">2 850 p.</span>
+                    <h3 class="giftsets-info__header product-name">Подарочный набор "Секреты Арабики"</h3>
+                    <p class="giftsets-info__text">Приготовлен на основе лучших сортов арабики с горных склонов Южной и Центральной Америки. Гармоничное сочетание позволяет получать сбалансированный сладковатый вкус с легкой кислинкой во вкусе.</p>
+                    <div class="giftsets-info__specifications">
+                        <div class="giftsets-info__grains">
+                            <span class="giftsets-info__span">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.9947 24.9842C13.7456 21.1554 13.7403 17.175 13.9689 15.3229C8.6998 17.8303 5.54683 23.2134 7.66831 28.0386C10.1673 28.2877 13.6712 27.5296 15.9947 24.9842Z" fill="#415167"/>
+                                    <path d="M16.5742 25.9104C14.5219 28.0875 10.9967 29.3168 8.30634 29.1543C10.7628 32.7015 17.2973 34.2612 23.1832 30.8386C20.663 30.2266 18.2863 28.4395 16.5742 25.9104Z" fill="#415167"/>
+                                    <path d="M22.7313 17.9603C19.2114 14.0611 18.919 10.3406 19.4029 7.89819C15.766 9.98319 13.9902 15.3284 15.4151 20.7764C17.0049 27.0043 22.6568 31.7159 27.9579 29.3438C28.1227 27.5946 27.9047 23.6683 22.7313 17.9603Z" fill="#415167"/>
+                                    <path d="M32.5251 16.1894C30.9088 9.98314 25.512 5.69401 20.5992 7.35117C19.8814 9.68528 19.9824 13.4383 23.5341 17.2617C25.1452 19.1571 29.1276 23.6466 29.0531 28.7318C32.3178 26.4356 33.8437 21.3667 32.5251 16.1894Z" fill="#415167"/>
+                                </svg>
+                            </span>
+                            <p class="giftsets-info__grains-text">
+                                <span class="giftsets-info__grains-span">
+                                    Зерна
+                                </span>
+                                Fine Robusta Blend
+                            </p>
+                        </div>
+                        <div class="giftsets-info__place">
+                            <span class="giftsets-info__span">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.0193 7.39404C18.8589 7.11733 18.5115 6.98246 18.2456 6.95483C17.9273 6.96003 17.6374 7.13811 17.4864 7.4209L14.375 13.2455L16.0068 15.1161L17.5155 12.683C17.8364 12.1659 18.6838 12.1659 19.0047 12.683L20.5135 15.1161L22.2852 13.0375L19.0193 7.39404Z" fill="#415167"/>
+                                    <path d="M23.75 15.5962L23.2335 14.7021L21.152 17.2304C20.9802 17.4679 20.7313 17.623 20.4102 17.5927C20.1192 17.5823 19.8522 17.4262 19.6977 17.1767L18.2451 14.8305L16.7925 17.1767C16.638 17.4263 16.371 17.5823 16.08 17.5927C16.0689 17.5936 16.0577 17.5936 16.0474 17.5936C15.7675 17.5936 15.504 17.4592 15.3382 17.2304L13.4435 14.9614L5.10463 30.4857C4.95869 30.7604 4.96555 31.0933 5.12438 31.361C5.2832 31.6297 5.56996 31.7935 5.879 31.7935H15.7786C15.5262 31.0756 15.5704 30.2742 15.9485 29.5982L23.75 15.5962Z" fill="#415167"/>
+                                    <path d="M26.9508 16.3034C26.6387 15.7454 25.7246 15.7454 25.4124 16.3034L23.5742 19.5865L26.1816 22.4494L28.7891 19.5865L26.9508 16.3034Z" fill="#415167"/>
+                                    <path d="M34.8866 30.4724L29.6612 21.2075L26.8278 24.383C26.6605 24.5847 26.4133 24.7016 26.1524 24.7016C25.8915 24.7016 25.6443 24.5847 25.4769 24.383L22.6436 21.2075L17.4767 30.4725C17.3231 30.7469 17.3257 31.0828 17.4836 31.3547C17.6415 31.6265 17.9298 31.7935 18.2422 31.7935H34.121C34.4334 31.7935 34.7218 31.6265 34.8797 31.3546C35.0376 31.0827 35.0402 30.7469 34.8866 30.4724Z" fill="#415167"/>
+                                </svg>
+                            </span>
+                            <p class="giftsets-info__place-text">
+                                <span class="giftsets-info__place-span">
+                                    Выращено
+                                </span>
+                                700 - 800m
+                            </p>
+                        </div>
+                    </div>
+                    <div class="giftsets-info__btn">
+                        <button class="giftsets-info__btn-cart count-btn-add">В КОРЗИНУ</button>
+                        <a class="giftsets-info__link" href="#">О ТОВАРЕ</a>
+                    </div>
+                </div>
+                <div class="giftsets-info product" data-target="two">
+                    <img class="giftsets-info__img product-img" src="./img/image.png" alt="">
+                    <span class="giftsets-info__price product-price">3 850 p.</span>
+                    <h3 class="giftsets-info__header product-name">Подарочный набор "Секреты Колумбии"</h3>
+                    <p class="giftsets-info__text">Приготовлен на основе лучших сортов арабики с горных склонов Южной и Центральной Америки. Гармоничное сочетание позволяет получать сбалансированный сладковатый вкус с легкой кислинкой во вкусе.</p>
+                    <div class="giftsets-info__specifications">
+                        <div class="giftsets-info__grains">
+                            <span class="giftsets-info__span">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.9947 24.9842C13.7456 21.1554 13.7403 17.175 13.9689 15.3229C8.6998 17.8303 5.54683 23.2134 7.66831 28.0386C10.1673 28.2877 13.6712 27.5296 15.9947 24.9842Z" fill="#415167"/>
+                                    <path d="M16.5742 25.9104C14.5219 28.0875 10.9967 29.3168 8.30634 29.1543C10.7628 32.7015 17.2973 34.2612 23.1832 30.8386C20.663 30.2266 18.2863 28.4395 16.5742 25.9104Z" fill="#415167"/>
+                                    <path d="M22.7313 17.9603C19.2114 14.0611 18.919 10.3406 19.4029 7.89819C15.766 9.98319 13.9902 15.3284 15.4151 20.7764C17.0049 27.0043 22.6568 31.7159 27.9579 29.3438C28.1227 27.5946 27.9047 23.6683 22.7313 17.9603Z" fill="#415167"/>
+                                    <path d="M32.5251 16.1894C30.9088 9.98314 25.512 5.69401 20.5992 7.35117C19.8814 9.68528 19.9824 13.4383 23.5341 17.2617C25.1452 19.1571 29.1276 23.6466 29.0531 28.7318C32.3178 26.4356 33.8437 21.3667 32.5251 16.1894Z" fill="#415167"/>
+                                </svg>
+                            </span>
+                            <p class="giftsets-info__grains-text">
+                                <span class="giftsets-info__grains-span">
+                                    Зерна
+                                </span>
+                                Fine Robusta Blend
+                            </p>
+                        </div>
+                        <div class="giftsets-info__place">
+                            <span class="giftsets-info__span">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.0193 7.39404C18.8589 7.11733 18.5115 6.98246 18.2456 6.95483C17.9273 6.96003 17.6374 7.13811 17.4864 7.4209L14.375 13.2455L16.0068 15.1161L17.5155 12.683C17.8364 12.1659 18.6838 12.1659 19.0047 12.683L20.5135 15.1161L22.2852 13.0375L19.0193 7.39404Z" fill="#415167"/>
+                                    <path d="M23.75 15.5962L23.2335 14.7021L21.152 17.2304C20.9802 17.4679 20.7313 17.623 20.4102 17.5927C20.1192 17.5823 19.8522 17.4262 19.6977 17.1767L18.2451 14.8305L16.7925 17.1767C16.638 17.4263 16.371 17.5823 16.08 17.5927C16.0689 17.5936 16.0577 17.5936 16.0474 17.5936C15.7675 17.5936 15.504 17.4592 15.3382 17.2304L13.4435 14.9614L5.10463 30.4857C4.95869 30.7604 4.96555 31.0933 5.12438 31.361C5.2832 31.6297 5.56996 31.7935 5.879 31.7935H15.7786C15.5262 31.0756 15.5704 30.2742 15.9485 29.5982L23.75 15.5962Z" fill="#415167"/>
+                                    <path d="M26.9508 16.3034C26.6387 15.7454 25.7246 15.7454 25.4124 16.3034L23.5742 19.5865L26.1816 22.4494L28.7891 19.5865L26.9508 16.3034Z" fill="#415167"/>
+                                    <path d="M34.8866 30.4724L29.6612 21.2075L26.8278 24.383C26.6605 24.5847 26.4133 24.7016 26.1524 24.7016C25.8915 24.7016 25.6443 24.5847 25.4769 24.383L22.6436 21.2075L17.4767 30.4725C17.3231 30.7469 17.3257 31.0828 17.4836 31.3547C17.6415 31.6265 17.9298 31.7935 18.2422 31.7935H34.121C34.4334 31.7935 34.7218 31.6265 34.8797 31.3546C35.0376 31.0827 35.0402 30.7469 34.8866 30.4724Z" fill="#415167"/>
+                                </svg>
+                            </span>
+                            <p class="giftsets-info__place-text">
+                                <span class="giftsets-info__place-span">
+                                    Выращено
+                                </span>
+                                700 - 800m
+                            </p>
+                        </div>
+                    </div>
+                    <div class="giftsets-info__btn">
+                        <button class="giftsets-info__btn-cart count-btn-add">В КОРЗИНУ</button>
+                        <a class="giftsets-info__link" href="#">О ТОВАРЕ</a>
+                    </div>
+                </div>
+                <div class="giftsets-info product" data-target="three">
+                    <img class="giftsets-info__img product-img" src="./img/image.png" alt="">
+                    <span class="giftsets-info__price product-price">2 500 p.</span>
+                    <h3 class="giftsets-info__header product-name">Подарочный набор "Секретные рецепты"</h3>
+                    <p class="giftsets-info__text">Приготовлен на основе лучших сортов арабики с горных склонов Южной и Центральной Америки. Гармоничное сочетание позволяет получать сбалансированный сладковатый вкус с легкой кислинкой во вкусе.</p>
+                    <div class="giftsets-info__specifications">
+                        <div class="giftsets-info__grains">
+                            <span class="giftsets-info__span">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.9947 24.9842C13.7456 21.1554 13.7403 17.175 13.9689 15.3229C8.6998 17.8303 5.54683 23.2134 7.66831 28.0386C10.1673 28.2877 13.6712 27.5296 15.9947 24.9842Z" fill="#415167"/>
+                                    <path d="M16.5742 25.9104C14.5219 28.0875 10.9967 29.3168 8.30634 29.1543C10.7628 32.7015 17.2973 34.2612 23.1832 30.8386C20.663 30.2266 18.2863 28.4395 16.5742 25.9104Z" fill="#415167"/>
+                                    <path d="M22.7313 17.9603C19.2114 14.0611 18.919 10.3406 19.4029 7.89819C15.766 9.98319 13.9902 15.3284 15.4151 20.7764C17.0049 27.0043 22.6568 31.7159 27.9579 29.3438C28.1227 27.5946 27.9047 23.6683 22.7313 17.9603Z" fill="#415167"/>
+                                    <path d="M32.5251 16.1894C30.9088 9.98314 25.512 5.69401 20.5992 7.35117C19.8814 9.68528 19.9824 13.4383 23.5341 17.2617C25.1452 19.1571 29.1276 23.6466 29.0531 28.7318C32.3178 26.4356 33.8437 21.3667 32.5251 16.1894Z" fill="#415167"/>
+                                </svg>
+                            </span>
+                            <p class="giftsets-info__grains-text">
+                                <span class="giftsets-info__grains-span">
+                                    Зерна
+                                </span>
+                                Fine Robusta Blend
+                            </p>
+                        </div>
+                        <div class="giftsets-info__place">
+                            <span class="giftsets-info__span">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.0193 7.39404C18.8589 7.11733 18.5115 6.98246 18.2456 6.95483C17.9273 6.96003 17.6374 7.13811 17.4864 7.4209L14.375 13.2455L16.0068 15.1161L17.5155 12.683C17.8364 12.1659 18.6838 12.1659 19.0047 12.683L20.5135 15.1161L22.2852 13.0375L19.0193 7.39404Z" fill="#415167"/>
+                                    <path d="M23.75 15.5962L23.2335 14.7021L21.152 17.2304C20.9802 17.4679 20.7313 17.623 20.4102 17.5927C20.1192 17.5823 19.8522 17.4262 19.6977 17.1767L18.2451 14.8305L16.7925 17.1767C16.638 17.4263 16.371 17.5823 16.08 17.5927C16.0689 17.5936 16.0577 17.5936 16.0474 17.5936C15.7675 17.5936 15.504 17.4592 15.3382 17.2304L13.4435 14.9614L5.10463 30.4857C4.95869 30.7604 4.96555 31.0933 5.12438 31.361C5.2832 31.6297 5.56996 31.7935 5.879 31.7935H15.7786C15.5262 31.0756 15.5704 30.2742 15.9485 29.5982L23.75 15.5962Z" fill="#415167"/>
+                                    <path d="M26.9508 16.3034C26.6387 15.7454 25.7246 15.7454 25.4124 16.3034L23.5742 19.5865L26.1816 22.4494L28.7891 19.5865L26.9508 16.3034Z" fill="#415167"/>
+                                    <path d="M34.8866 30.4724L29.6612 21.2075L26.8278 24.383C26.6605 24.5847 26.4133 24.7016 26.1524 24.7016C25.8915 24.7016 25.6443 24.5847 25.4769 24.383L22.6436 21.2075L17.4767 30.4725C17.3231 30.7469 17.3257 31.0828 17.4836 31.3547C17.6415 31.6265 17.9298 31.7935 18.2422 31.7935H34.121C34.4334 31.7935 34.7218 31.6265 34.8797 31.3546C35.0376 31.0827 35.0402 30.7469 34.8866 30.4724Z" fill="#415167"/>
+                                </svg>
+                            </span>
+                            <p class="giftsets-info__place-text">
+                                <span class="giftsets-info__place-span">
+                                    Выращено
+                                </span>
+                                700 - 800m
+                            </p>
+                        </div>
+                    </div>
+                    <div class="giftsets-info__btn">
+                        <button class="giftsets-info__btn-cart count-btn-add">В КОРЗИНУ</button>
+                        <a class="giftsets-info__link" href="#">О ТОВАРЕ</a>
+                    </div>
+                </div>
+                <ul class="tabs-list">
+                    <li class="tabs-item">
+                        <a class="giftsets-link giftsets-link--active" data-path="one">1</a>
+                    </li>
+                    <li class="tabs-item">
+                        <a class="giftsets-link" data-path="two">2</a>
+                    </li>
+                    <li class="tabs-item">
+                        <a class="giftsets-link" data-path="three">3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="combo" id="combo">
+        <div class="combo-background"></div>
+        <div class="container">
+            <p class="section-text">Ваш любимый кофе</p>
+            <h2 class="section-header combo-header">Комбо-наборы</h2>
+            <div class="swiper-two">
+                <div class="swiper-wrapper swiper-wrapper-two">
+                    <div class="swiper-slide combo-card product">
+                        <img class="combo-img" src="./img/IMAGE (6).jpg" alt="">
+                        <div class="combo-card__wrapper">
+                            <span class="combo-card__price product-price">1 500 p.</span>
+                            <h3 class="combo-card__header product-name">
+                                Combo Revo Morning
+                            </h3>
+                            <p class="combo-card__text">Насыщенный, яркий вкус</p>
+                            <button class="combo-card__btn count-btn-add" type="button">
+                                В КОРЗИНУ
+                            </button>
+                            <a class="combo-card__link">
+                                О ТОВАРЕ
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide combo-card product">
+                        <img class="combo-img product-img" src="./img/IMAGE (7).jpg" alt="">
+                        <div class="combo-card__wrapper">
+                            <span class="combo-card__price product-price">1 500 p.</span>
+                            <h3 class="combo-card__header product-name">
+                                Combo Revo Everyday
+                            </h3>
+                            <p class="combo-card__text">Насыщенный, яркий вкус</p>
+                            <button class="combo-card__btn count-btn-add" type="button">
+                                В КОРЗИНУ
+                            </button>
+                            <a class="combo-card__link">
+                                О ТОВАРЕ
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide combo-card product">
+                        <img class="combo-img product-img" src="./img/IMAGE (8).jpg" alt="">
+                        <div class="combo-card__wrapper">
+                            <span class="combo-card__price product-price">1 500 p.</span>
+                            <h3 class="combo-card__header product-name">
+                                Combo Revo Honey
+                            </h3>
+                            <p class="combo-card__text">Насыщенный, яркий вкус</p>
+                            <button class="combo-card__btn count-btn-add" type="button">
+                                В КОРЗИНУ
+                            </button>
+                            <a class="combo-card__link">
+                                О ТОВАРЕ
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide combo-card product">
+                        <img class="combo-img product-img" src="./img/IMAGE (9).jpg" alt="">
+                        <div class="combo-card__wrapper">
+                            <span class="combo-card__price product-price">1 500 p.</span>
+                            <h3 class="combo-card__header product-name">
+                                Combo Revo Honey
+                            </h3>
+                            <p class="combo-card__text">Насыщенный, яркий вкус</p>
+                            <button class="combo-card__btn count-btn-add" type="button">
+                                В КОРЗИНУ
+                            </button>
+                            <a class="combo-card__link">
+                                О ТОВАРЕ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev-two"></div>
+                <div class="swiper-button-next-two"></div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="./js/inputmask.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</html>
